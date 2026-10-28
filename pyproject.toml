@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pinerate-datagov_jd228"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别数据治理与血缘专家·注意力核��的访存瓶颈的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "pinerate" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://pinerate.github.io"
+Repository = "https://github.com/pinerate/datagov_jd228"
+Issues = "https://github.com/pinerate/datagov_jd228/issues"
+
+[project.scripts]
+datagov_jd228 = "datagov_jd228:main"
+
+[tool.setuptools]
+py-modules = ["datagov_jd228"]
